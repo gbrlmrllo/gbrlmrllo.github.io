@@ -1,0 +1,47 @@
+<aside class="sidebar">
+  <div class="container">
+    <h1>{{ .Site.Title }}</h1>
+
+    <div class="sidebar-about">
+      {{ with .Site.Params.gravatar }}
+      <div class="author-image">
+        <a href="{{ $.Site.BaseURL }}">
+          <img src="https://www.gravatar.com/avatar/{{md5 .}}?s=200&d=mp" class="img-circle img-headshot center" alt="Gravatar">
+        </a>
+      </div>
+      {{ else }}
+        {{ with .Site.Params.profilePicture }}
+        <div class="author-image">
+          <a href="{{ $.Site.BaseURL }}">
+            <img src="{{ . | relURL }}" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Site.Params.description }}
+      <p class="lead">{{.}}</p>
+      {{end}}
+
+      <section class="social-icons">
+        {{ range $item := .Site.Params.socialIcons }}
+        <a href="{{ $item.url }}" rel="me" title="{{ $item.title }}" target="_blank">
+          <i class="fab {{ $item.icon }}" aria-hidden="true"></i>
+        </a>
+        {{ end }}
+      </section>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main -}}
+        <li {{ if $currentPage.IsMenuCurrent .Menu . }} class="active" {{ end }}>
+          <i class="fa-solid fa-{{ .Pre }}"></i>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</aside>

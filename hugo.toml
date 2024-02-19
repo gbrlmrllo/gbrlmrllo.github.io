@@ -1,0 +1,43 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Gabriel Morillo'
+theme = 'soho'
+
+[params]
+customCss = ["css/main.css"]
+gravatar = 'gbrlmrllo@gmail.com'
+description = "Hi, my name is Gabriel and I'm a senior software engineer. Welcome to my personal website!"
+
+## Set as many as you want.
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "#"
+
+[menus]
+[[menus.main]]
+    name = 'About Me'
+    pageRef = '/about'
+    weight = 10
+    pre = 'user'
+[[menus.main]]
+    name = 'Resume'
+    pageRef = '/resume'
+    weight = 20
+    pre = 'file-lines'
+[[menus.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 30
+    pre = 'blog'
+
