@@ -4,13 +4,13 @@
     <h4>{{ .Site.Params.Role }}</h4>
     <p>{{ .Site.Params.About.Desc }}</p>
 
-    <a href="https://google.com" target="_blank" class="btn btn-primary">
+    <a href="cv.pdf" target="_blank" class="btn btn-primary">
       <i class="fa-solid fa-file-pdf"></i>
       Download PDF version
     </a>
   </div>
 
   <div class="about-header-image">
-    <img src="/images/programmer.webp" alt="programmer">
+    <img src="{{ .Site.Params.HeaderPicture }}" alt="programmer">
   </div>
 </header>

@@ -1,12 +1,13 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Gabriel Morillo'
-theme = 'soho'
+baseURL = "https://gbrlmrllo.github.io/"
+languageCode = "en-us"
+title = "Gabriel Morillo"
+theme = "soho"
 
 [params]
 customCss = ["css/main.css"]
-profilePicture = '/images/selfie1.webp'
-role = 'Senior Software Engineer'
+profilePicture = "images/selfie1.webp"
+headerPicture = "images/programmer.webp"
+role = "Senior Software Engineer"
 description = "Hi, my name is Gabriel and I'm a senior software engineer. Welcome to my personal website!"
 lenguages=["Spanish (Native)", "English (Elementary proficiency)"]
 education=["Engineer's Degree, Systems Engineering (2008-2014)"]
