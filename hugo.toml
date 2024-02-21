@@ -5,39 +5,106 @@ theme = 'soho'
 
 [params]
 customCss = ["css/main.css"]
-gravatar = 'gbrlmrllo@gmail.com'
+profilePicture = '/images/selfie1.webp'
+role = 'Senior Software Engineer'
 description = "Hi, my name is Gabriel and I'm a senior software engineer. Welcome to my personal website!"
+lenguages=["Spanish (Native)", "English (Elementary proficiency)"]
+education=["Engineer's Degree, Systems Engineering (2008-2014)"]
+
+## About information
+[params.about]
+desc = "Systems Engineer and Full Stack Developer, with 7+ years of experience in the application development world, I am currently developing web platforms with experience in: teamwork, agile, planning, optimizing, integrating, testing and startup applications"
+
+[[params.work_experiences]]
+role="Engineer Manager"
+desc="In my role as an Engineering Manager in Moonshot, I led a team of 6, focusing on fostering a collaborative and productive work environment. My responsibilities included delivering detailed performance and personal development reports for each team member quarterly, ensuring a clear understanding of their progress and areas for improvement. I conducted technical mentorship, supporting the development of key skills and promoting innovation within the team. I was dedicated to fostering the personal growth of each engineer, identifying opportunities for their professional advancement. Additionally, I implemented code review processes and quality controls to continuously improve product excellence, and optimized workflows through Agile practices, enhancing team efficiency and project delivery."
+company="Moonshot Partners"
+period="Jan 2020 - Oct 2023"
+company_link="https://www.linkedin.com/company/moonshotpartners/"
+keys=[
+  "Led a team of 6 engineers, fostering a collaborative work environment that resulted in a 25% increase in team satisfaction and a 40% decrease in staff turnover within two years.",
+  "Developed and implemented a mentoring program for junior engineers that improved retention rates and accelerated the development of critical project skills.",
+  "Implemented stricter quality controls and code review processes, resulting in a 40% reduction in product defects in the first year of implementation.",
+  "Refined the Agile/Scrum methodology implementation within the project, enhancing development process efficiency by 30% through minimizing meeting times and prioritizing asynchronous work. This approach maintained seamless communication and workflow, significantly reducing the time to market for new products without sacrificing team collaboration or project visibility.",
+  "Organized with my team a series of technical and innovation talks that were presented to the rest of the company, fostering a culture of continuous learning and technological advancement."
+]
+
+[[params.work_experiences]]
+role="Senior Software Engineer"
+desc="As a Senior Software Engineer at Sunlight, I focused on developing scalable features in Ruby on Rails and Ember,  My role extended to providing comprehensive support to the Sunlight's Customer Success team, which involved troubleshooting and resolving bugs reported by clients, implementing customer-requested features, and technically explaining the functionalities to ensure clarity and satisfaction. I was responsible for keeping the Ember.js and Ruby on Rails frameworks up to date, monitoring background jobs, and prioritizing bug fixes to maintain system integrity. Additionally, I played a critical role in the creation and optimizing the performance of the API and database, My responsibilities also included coaching junior programmers, facilitating the onboarding process for new hires to ensure a smooth transition into our projects, and writing technical documentation for migration processes and support. This comprehensive involvement not only contributed to the project's success but also fostered a collaborative and knowledgeable team environment."
+company="Sunlight Technologies"
+period="Oct 2016 - Dec 2019"
+company_link="https://www.linkedin.com/company/withsunlight/"
+keys=[
+  "Coached and mentored 3+ junior programmers, improving their coding skills and project management capabilities, while also streamlining the onboarding process for new hires, reducing ramp-up time.", 
+  "Kept the Ember.js and Ruby on Rails frameworks up-to-date, ensuring the application leveraged the latest security patches and features, reducing vulnerability risks.",
+  "Developed and deployed client-specific integration solutions utilizing Huginn for task automation, strategically avoiding increased complexity within the application's core code. This approach significantly accelerated integrations development times and played a key role in enhancing customer satisfaction.",
+  "Developed a cohort-based solution that streamlined user grouping by department, security and permissions, enhancing data management and operational efficiency. This allowed clients to better analyze and customize services to meet user needs.",
+  "Provided support and development for payment implementations, including Stripe, and integrations with virtual debit card providers, enhancing transactional capabilities and expanding payment options for users."
+]
+
+[[params.projects]]
+name="Sunlight"
+desc="Application in the learning category that helps work teams and companies access educational resources using an assigned budget."
+page="https://www.sunlight.is"
+video_id="qSEXYPD2dRQ"
+
+[[params.projects]]
+name="Wiz.me"
+desc="Personal assistant offering practice in the four communication skills of the English language: speaking, listening, writing and reading"
+page="https://app.newwizme.com.br"
+video_id="_NUkMrw46ts"
+
+[params.technical]
+skills=[
+  "Ruby/Javascript",
+  "Ruby on Rails/React/Ember/Next.js",
+  "Node.js",
+  "PostgreSQL/MySQL",
+  "CSS/SASS/SCSS",
+  "Bootstrap/Bulma",
+  "AWS",
+  "GIT",
+  "Objected-oriented Programming (OOP)",
+  "Test-driven development (TDD)"
+]
+
+[params.professional]
+skills=[
+  "Team leadership",
+  "Team player",
+  "Coaching",
+  "Project management",
+  "Effective communication",
+  "Feedback culture",
+  "Agile principles"
+]
 
 ## Set as many as you want.
-  [[params.socialIcons]]
-  icon = "fa-linkedin"
-  title = "Linkedin"
-  url = "#"
+[[params.socialIcons]]
+icon = "fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/gabriel-morillo-42446279/"
 
-  [[params.socialIcons]]
-  icon = "fa-github"
-  title = "GitHub"
-  url = "#"
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/gbrlmrllo"
 
-  [[params.socialIcons]]
-  icon = "fa-twitter"
-  title = "Twitter"
-  url = "#"
+[[params.socialIcons]]
+icon = "fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/gbrlmrllo"
 
 [menus]
 [[menus.main]]
-    name = 'About Me'
-    pageRef = '/about'
-    weight = 10
-    pre = 'user'
+  name = 'About Me'
+  url = '/'
+  weight = 10
+  pre = 'user'
 [[menus.main]]
-    name = 'Resume'
-    pageRef = '/resume'
-    weight = 20
-    pre = 'file-lines'
-[[menus.main]]
-    name = 'Blog'
-    pageRef = '/blog'
-    weight = 30
-    pre = 'blog'
+  name = 'Blog'
+  url = '/blog'
+  weight = 30
+  pre = 'blog'
 

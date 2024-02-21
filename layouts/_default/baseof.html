@@ -56,7 +56,7 @@
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
   {{ end -}}
 </head>
-<body>
+<body class="ligth">
   {{ partial "sidebar.html" . }}
 
   <main class="content container">

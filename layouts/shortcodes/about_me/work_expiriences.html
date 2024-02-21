@@ -1,0 +1,92 @@
+<div class="about-container">
+  <section class="about-work-expiriences">
+    <h2 class="subtitle">
+      WORK EXPERIENCES
+    </h2>
+
+    {{range .Site.Params.Work_experiences }}
+      <h6>
+        {{ .role }}
+        <div class="company-data">
+          <a href="{{ .company_link }}">{{ .company }} |</a>  
+          <span class="period">{{ .period }}</span>
+        </div>
+      </h6>
+      <p>{{ .desc }}</p>
+
+      <p><strong>KEY ACCOMPLISHMENTS</strong></p>
+
+      <ul>
+        {{ range .keys }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    <br>
+
+    <h2 class="subtitle">
+      MOST NOTABLE PROJECTS
+    </h2>
+
+    {{range .Site.Params.Projects }}
+      <h6>
+        {{ .name }}
+        <div class="company-data">
+          <a href="{{ .page }}">{{ .page }}</a>  
+        </div>
+      </h6>
+      <p>{{ .desc }}</p>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ .video_id }}?si=0trhzd6dv0Mu6Wzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    {{ end }}
+  </section>
+
+  <section class="about-extras">
+    <h2 class="subtitle">
+      SKILLS
+    </h2>
+
+    <h6>
+      Technical
+      <ul>
+        {{range .Site.Params.Technical.skills }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </h6>
+
+    <h6>
+      Professional
+      <ul>
+        <li>Team leadership</li>
+        <li>Team player</li>
+        <li>Coaching</li>
+        <li>Project Management</li>
+        <li>Effective communication</li>
+        <li>Feedback culture</li>
+        <li>Agile principles</li>
+      </ul>
+    </h6>
+
+    <h2 class="subtitle">
+      LANGUAGES
+    </h2>
+
+    <ul>
+      {{range .Site.Params.lenguages }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+
+    <h2 class="subtitle">
+      EDUCATION
+    </h2>
+
+    <ul>
+      {{range .Site.Params.education }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
