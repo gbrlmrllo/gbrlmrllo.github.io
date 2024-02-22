@@ -98,14 +98,14 @@ title = "Twitter"
 url = "https://twitter.com/gbrlmrllo"
 
 [menus]
-[[menus.main]]
-  name = 'About Me'
-  url = '/'
-  weight = 10
-  pre = 'user'
-[[menus.main]]
-  name = 'Blog'
-  url = '/blog'
-  weight = 30
-  pre = 'blog'
+## [[menus.main]]
+  ## name = 'About Me'
+  ## url = '/'
+  ## weight = 10
+  ## pre = 'user'
+## [[menus.main]]
+  ## name = 'Blog'
+  ## url = '/blog'
+  ## weight = 30
+  ## pre = 'blog'
 

@@ -110,6 +110,17 @@ body {
     }
   }
 
+  .sidebar-footer {
+    label {
+      background-color: #54B689;
+      border: 3px solid rgba(255,255,255,0.4);
+    }
+
+    label div.s {
+      background-color:rgba(255,255,255,0.4);
+    }
+  }
+
   .btn-primary {
     background-color: var(--light-bg-color);
     color: white !important;
@@ -178,7 +189,7 @@ body {
         color: white;
       }
 
-      h4 {
+      h4, p {
         color: rgba(255,255,255,0.7);
       }
     }
@@ -219,6 +230,17 @@ body {
 
   footer {
     color: white;
+  }
+
+  .sidebar-footer {
+    label {
+      background-color: #54B689;
+      border: 3px solid #54B689;
+    }
+
+    label div.s {
+      background-color:#54B689;
+    }
   }
 
   .btn-primary {
@@ -402,4 +424,64 @@ footer {
   cursor: pointer;
   font-weight: 500;
   font-size: 1rem;
+}
+
+.sidebar-footer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 100%;
+
+  .darkmode-text {
+    display: inline-flex;
+    font-size: .8rem;
+    font-weight: 700;
+    position: absolute;
+    left: -50px;
+    bottom: 0px;
+    
+    i {
+      position: relative;
+      top: 3px;
+      margin-right: 5px;
+    }
+  }
+
+  label {
+    width: 70px;
+    height: 30px;
+    border-radius: 16px;
+    position: absolute;
+    top: 26px;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+  }
+  
+  input:checked ~ label {
+    background-color: transparent;
+  }
+  
+  input:checked ~ label div.s {
+    margin-left: 31px;
+  }
+  
+  label div.s {
+    width: 27px;
+    height: 18px;
+    border-radius: 16px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+  }
+  
+  input {
+    display: none;
+    appearance: none;
+  }
+}
+
+* {
+  user-select: none;
+  transition: 0.2s;
 }
