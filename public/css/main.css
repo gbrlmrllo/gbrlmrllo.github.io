@@ -485,3 +485,141 @@ footer {
   user-select: none;
   transition: 0.2s;
 }
+
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */
+  html {
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 9px;
+  }
+
+  .sidebar {
+    width: 100%;
+
+    h1 {
+      margin-top: 5px;
+    }
+  }
+
+  .sidebar-about {
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 5px;
+    }
+
+    .lead {
+      margin-bottom: 5px;
+    }
+
+    .social-icons {
+      margin-top: 5px;
+    }
+  }
+
+  .about-head {
+    header {
+      margin: 0;
+      padding: 0;
+      display: block;
+
+      .about-header-content {
+        margin: 0;
+        margin-bottom: 10px;
+        width: 100%;
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        h4 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: .7rem;
+        }
+
+        .btn {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+
+      .about-header-image {
+        display: none;
+      }
+    }
+  }
+
+  .about-content {
+    padding: 0;
+    margin: 0;
+
+    .about-container {
+      display: block;
+    }
+
+    .about-work-expiriences {
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+
+    .subtitle {
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    h6 {
+      margin-top: 9px;
+      font-size: .8rem;
+
+      .company-data {
+        margin-top: 2px;
+      }
+
+      a, span {
+        font-size: .5rem;
+      }
+    }
+
+    .about-extras {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+
+      ul {
+        padding: 0;
+      }
+    }
+  }
+
+  .sidebar-footer {
+    width: 100%;;
+    top: 236px;
+
+    .darkmode-text {
+      display: none;
+    }
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
